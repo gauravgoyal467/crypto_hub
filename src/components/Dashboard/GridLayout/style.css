@@ -1,0 +1,131 @@
+.gridContainer{
+    width: 300px;
+    height:280px;
+    background-color: var(--darkgrey);
+    border:2px solid var(--darkgrey);
+    border-radius: 0.75rem; 
+}
+.gridContainer:hover{
+    border-color: var(--red);
+}
+.gridContainer-green:hover{
+    border-color: var(--green);
+}
+.coin-logo{
+    height:3.2rem;
+    width:3.2rem;
+}
+.info{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:0.8rem;
+    margin:1rem 1.5rem;
+}
+.symbol{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin:0;
+    color:var(--white);
+}
+.title-coin{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:1.2rem;
+}
+.wishlist-icon {
+    padding: 0.5rem;
+    display: block;
+    color: var(--green);
+    font-size: 2rem !important;
+    margin-left: auto;
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+    font-weight: 600;
+  }
+  .wishlist-icon:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+  }
+  
+  .wishlist-icon-red {
+    color: var(--red);
+    border: 2px solid var(--red);
+  }
+  
+  .wishlist-icon-red:hover {
+    background-color: var(--red) !important;
+    color: var(--white);
+    transition: all 0.3s;
+  }
+  
+.coin-name{
+    margin:0;
+    color:var(--grey)
+}
+.chip{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+    margin:1rem 1.5rem;
+}
+.percentChangeGreen{
+    border:1px solid var(--green);
+    padding:0.5rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--green);
+    
+}
+.icon-green{
+    border-radius: 50%;
+    border:1px solid var(--green);
+    padding:0.3rem;
+    color:var(--green)
+}
+.up{
+    color:var(--green)
+}
+.percentChangeRed{
+    border:1px solid var(--red);
+    padding:0.5rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--red);
+}
+.icon-red{
+    border-radius: 50%;
+    border:1px solid var(--red);
+    padding:0.3rem;
+    color: var(--red); ;
+}
+.down{
+    color:var(--red)
+}
+.price,.volume{
+    margin:1rem 1.5rem;
+}
+.volume{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.volume p{
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .wishlist-icon {
+      font-size: 1rem !important;
+      padding: 0.35rem;
+    }
+  }

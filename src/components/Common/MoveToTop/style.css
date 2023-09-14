@@ -1,0 +1,14 @@
+.moveToTopBtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:2.5rem;
+    height:2.5rem;
+    border:2px solid var(--blue);
+    border-radius: 50%;
+    position: fixed;
+    bottom:1.5rem;
+    right:1.5rem;
+    z-index: 2000;
+    cursor: pointer;
+}

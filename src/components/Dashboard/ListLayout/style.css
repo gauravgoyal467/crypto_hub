@@ -1,0 +1,205 @@
+.listContainer{
+    display:flex;
+    width:92.5%;
+    background-color: var(--darkgrey);
+    border:2px solid var(--darkgrey);
+    border-radius: 0.4rem; 
+    align-items: center;
+    justify-content: space-between;
+    padding:0rem 2rem;
+    margin:auto;
+}
+td{
+    text-align: left;
+    width:18%;
+}
+.listContainer:hover{
+    border: 2px solid var(--red);
+    transition: all 0.3s;
+
+}
+.listContainer-green:hover{
+    border-color: var(--green);
+}
+.coin-logo-list{
+    height:2.5rem;
+    width:2.5rem;
+}
+.info-list{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2em;
+    margin:1rem 1.5rem;
+}
+.name-list{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.symbol-list{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin:0;
+    color:var(--white);
+}
+.coin-name-list{
+    margin:0;
+    color:var(--grey)
+}
+.coin-detail-list{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+}
+.percentChangeGreen-list{
+    border:1px solid var(--green);
+    padding:0.5rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--green);
+    min-width: 60px;
+    
+}
+.icon-green-list{
+    border:1px solid var(--green);
+    padding:0.3rem;
+    color:var(--green);
+    border-radius: 50%;
+}
+
+.up{
+    color:var(--green)
+}
+.percentChangeRed-list{
+    border:1px solid var(--red);
+    padding:0.5rem 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--red);
+    min-width: 60px;
+}
+.icon-red-list{
+    border:1px solid var(--red);
+    padding:0.3rem;
+    border-radius: 50%;
+    color:var(--red);
+}
+.down{
+    color:var(--red)
+}
+.list{
+    text-align: right;
+}
+
+.mobile-list{
+    display:none;
+}
+
+@media only screen and (max-Width:1000px){
+    td .icon{
+        display: none;
+    }
+    .mobile-list{
+        display:block;
+    }
+    .desktop-list{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-Width:860px){
+   .mobile-list-cap{
+    display:none;
+   }
+}
+
+@media only screen and (max-Width:660px){
+    .coin-logo-list{
+        width:1.7rem;
+        height:1.7rem;
+    }
+    .listContainer{
+        width:100%;
+        padding:0rem 0.5rem;
+    }
+    .info-list{ 
+        gap:0.5rem;
+        margin:0;
+    }
+    td{
+        margin:0;
+       width:100vw;
+    }
+    .info-list{
+        gap:0.5em;
+        margin:1rem ;
+    }
+    .symbol-list{
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .coin-name-list{
+       /* display: none; */
+       font-size:0.6rem;
+    }
+    .coin-detail-list{
+        gap:0.5rem;
+    }
+
+    .percentChangeGreen-list{
+        padding:0.5rem;
+        font-size: 0.5rem;
+        min-width: 40px;
+    }
+    .percentChangeRed-list{
+        padding:0.5rem;
+        font-size: 0.5rem;
+        min-width: 40px;
+    }
+    .price-list{
+        font-size: 0.7rem;
+    } 
+    /* .wishlist-icon-list {
+        padding: 0.5rem;
+        display: block;
+        color: var(--green);
+        font-size: 2rem !important;
+        margin-left: auto;
+        border: 2px solid var(--green);
+        border-radius: 3rem;
+        font-weight: 600;
+      }
+      .wishlist-icon-list:hover {
+        background-color: var(--green);
+        color: var(--white);
+        transition: all 0.3s;
+      }
+      
+      .wishlist-icon-red-list {
+        color: var(--red);
+        border: 2px solid var(--red);
+      }
+      
+      .wishlist-icon-red-list:hover {
+        background-color: var(--red) !important;
+        color: var(--white);
+        transition: all 0.3s;
+      } */
+
+      @media only screen and (max-width: 460px) {
+        .wishList-icon {
+          font-size: 1rem !important;
+          padding: 0.35rem;
+        }
+      }
+    
+   
+ }

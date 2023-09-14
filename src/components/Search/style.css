@@ -1,0 +1,21 @@
+.search{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    background-color: var(--darkgrey);
+    color:var(--grey);
+    border-radius: 2rem;
+    padding:1rem 2rem;
+    font-size: 1.2rem;
+    width:80%;
+    margin: auto;
+}
+input{
+    background-color: var(--darkgrey);
+    width:100%;
+    border:none;
+    outline:none;
+    font-size: 1.2rem;
+    color:var(--white);
+}
