@@ -1,3 +1,35 @@
+# CryptoHub : A real time price tracker of different crypto coins.
+Link to visit site : https://cryptohub100.netlify.app/
+
+# APIs used : coingecko APIs
+
+# Properties of this app
+1. You can see top 100 crypto coins in grid as well as list layout in the dashboard
+2. You can get to see single coin info how it is performing about it and in graph representation
+3. You can compare two coins of your choice their price fluctuation etc
+4. You can change your currency also in which currency you want to get the coin price ,market cap and total volume
+5. Proper graph visualization is implemented.
+6. You can change the range of days in which you are getting data of every coin
+7. You can wishlist your favourite coin and can see later when ever needed.
+8. You can remove from wishlist also if you want
+
+# Scope of improvement in this app
+1. More features like theme changing can be implemented
+2. More filteres can be implemented
+3. More data manipulation can be done etc
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
