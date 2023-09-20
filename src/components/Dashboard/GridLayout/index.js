@@ -9,6 +9,7 @@ import { IconButton } from "@mui/material";
 import { isWishListed } from "../../../functions/isWishListed";
 import { removeFromWishList } from "../../../functions/removeFromWishList";
 import { addToWishList } from "../../../functions/addToWishList";
+import convertNumber from "../../../functions/convertNumber";
 
 const GridLayout = ({ coin, currency,isWishList }) => {
   const [added, setAdded] = useState(isWishListed(coin.id));
@@ -66,7 +67,7 @@ const GridLayout = ({ coin, currency,isWishList }) => {
         <div>
           <div className="chip">
             <div className="percentChangeGreen">
-              {coin.price_change_percentage_24h.toFixed(2)}%
+              {Math.round(coin.price_change_percentage_24h*100)/100}%
             </div>
             <TrendingUpRoundedIcon className="icon-green" />
           </div>
@@ -78,7 +79,7 @@ const GridLayout = ({ coin, currency,isWishList }) => {
         <div>
           <div className="chip">
             <div className="percentChangeRed">
-              {coin.price_change_percentage_24h.toFixed(2)}%
+              {Math.round(coin.price_change_percentage_24h*100)/100}%
             </div>
             <TrendingDownRoundedIcon className="icon-red" />
           </div>
@@ -88,8 +89,8 @@ const GridLayout = ({ coin, currency,isWishList }) => {
         </div>
       )}
       <div className="volume">
-        <p>Total Vol : {coin.total_volume.toLocaleString()}</p>
-        <p>MarketCap : {coin.market_cap.toLocaleString()}</p>
+        <p>Total Vol : {convertNumber(coin.total_volume)}</p>
+        <p>MarketCap : {convertNumber(coin.market_cap)}</p>
       </div>
     </div>
   );

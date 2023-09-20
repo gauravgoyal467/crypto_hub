@@ -1,21 +1,19 @@
+const convertNumber = (number) => {
+  const trillion = 1e12;
+  const billion = 1e9;
+  const million = 1e6;
+  const thousand = 1e3;
+  if (number >= trillion) {
+    return (number / trillion).toFixed(2) + " T";
+  } else if (number >= billion) {
+    return (number / billion).toFixed(2) + " B";
+  } else if (number >= million) {
+    return (number / million).toFixed(2) + " M";
+  } else if (number >= thousand) {
+    return (number / thousand).toFixed(2) + " k";
+  } else {
+    return number;
+  }
+};
 
-const convertNumber = (num) => {
-    const actualNumber=num.toLocaleString();
-    const arr=actualNumber.split(",");
-    if(arr.length === 5){
-        return arr[0]+"."+arr[1].slice(0,2)+"T";
-    }
-    else if(arr.length === 4){
-        return arr[0]+"."+arr[1].slice(0,2)+"B";
-    }
-    else if(arr.length === 3){
-        return arr[0]+"."+arr[1].slice(0,2)+"M";
-    }
-    else if(arr.length === 2){
-        return arr[0]+"."+arr[1].slice(0,2)+"K";
-    }else{
-        return actualNumber;
-    }
-}
-
-export default convertNumber
+export default convertNumber;

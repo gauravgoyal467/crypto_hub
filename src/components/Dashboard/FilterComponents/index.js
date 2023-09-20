@@ -63,7 +63,7 @@ const FilterComponent = ({val,setVal,itemList,label,flag}) => {
           onChange={handleChange}
         > 
            { itemList.map((item,index)=>(
-               <MenuItem key={index} value={flag===true ? item.substring(0,3) : item}>{item}</MenuItem>
+               <MenuItem key={index} value={flag===true ? item.slice(0,3) : item}>{item}</MenuItem>
             ))
            }
         </Select>

@@ -4,11 +4,11 @@ import { Chart as ChartJS } from "chart.js/auto";
 import "./style.css";
 import convertNumber from "../../../functions/convertNumber";
 
-const Chart = ({ chartData, priceType,multiAxis,curr }) => {
+const Chart = ({ chartData, priceType, multiAxis, curr }) => {
   const options = {
     plugins: {
       legend: {
-        display:multiAxis ?true :false,
+        display: multiAxis ? true : false,
       },
     },
     responsive: true,
@@ -18,30 +18,22 @@ const Chart = ({ chartData, priceType,multiAxis,curr }) => {
     },
     scales: {
       y: {
-        type:'linear',
-        display:true,
+        type: "linear",
+        display: true,
         position: "left",
         ticks: {
-          callback: function (value,index,ticks) {
-            if (priceType === "prices") {
-              return value.toLocaleString() + " " + curr;
-            } else {
-              return convertNumber(value) + " " + curr;
-            }
+          callback: function (value, index, ticks) {
+            return convertNumber(value) + " " + curr;
           },
         },
       },
-      y1:multiAxis && {
-        type:'linear',
-        display:true,
-        position:"right",
+      y1: multiAxis && {
+        type: "linear",
+        display: true,
+        position: "right",
         ticks: {
-          callback: function (value,index,ticks) {
-            if (priceType === "prices") {
-              return value.toLocaleString() + " " + curr;
-            } else {
-              return convertNumber(value) + " " + curr;
-            }
+          callback: function (value, index, ticks) {
+            return convertNumber(value) + " " + curr;
           },
         },
       },

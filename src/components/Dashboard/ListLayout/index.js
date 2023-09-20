@@ -40,7 +40,7 @@ const ListLayout = ({ coin, currency,isWishList }) => {
         <td className="coin-detail-list">
           <Tooltip title="Price change in 24hrs" placement="bottom-start">
             <div className="percentChangeGreen-list">
-              {coin.price_change_percentage_24h.toFixed(2)}%
+            {Math.round(coin.price_change_percentage_24h*100)/100}%
             </div>
           </Tooltip>
           <TrendingUpRoundedIcon className="icon-green-list icon" />
@@ -54,7 +54,7 @@ const ListLayout = ({ coin, currency,isWishList }) => {
         <td className="coin-detail-list">
           <Tooltip title="Price change in 24hrs" placement="bottom-start">
             <div className="percentChangeRed-list">
-              {coin.price_change_percentage_24h.toFixed(2)}%
+            {Math.round(coin.price_change_percentage_24h*100)/100}%
             </div>
           </Tooltip>
           <TrendingDownRoundedIcon className="icon-red-list icon" />
@@ -69,28 +69,28 @@ const ListLayout = ({ coin, currency,isWishList }) => {
       {/* desktop view */}
       <Tooltip title="Total Volume" placement="bottom-end">
         <td className="list desktop-list">
-          <p>{coin.total_volume.toLocaleString()}</p>
+          <p>{convertNumber(coin.total_volume)}</p>
         </td>
       </Tooltip>
 
        {/* mobile view */}
       <Tooltip title="Total Volume" placement="bottom-end">
         <td className="list mobile-list mobile-list-vol">
-          <p>${convertNumber(coin.total_volume.toLocaleString())}</p>
+          <p>${convertNumber(coin.total_volume)}</p>
         </td>
       </Tooltip>
 
        {/* desktop view */}
       <Tooltip title="Market Cap" placement="bottom-end">
         <td className="list desktop-list">
-          <p>{coin.market_cap.toLocaleString()}</p>
+          <p>{convertNumber(coin.market_cap)}</p>
         </td>
       </Tooltip>
 
        {/* mobile view */}
       <Tooltip title="Market Cap" placement="bottom-end">
         <td className="list mobile-list mobile-list-cap">
-          <p>${convertNumber(coin.market_cap.toLocaleString())}</p>
+          <p>${convertNumber(coin.market_cap)}</p>
         </td>
       </Tooltip>
       <td style={{ width: "fit-content" }}>
