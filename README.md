@@ -1,5 +1,5 @@
 # CryptoHub : A real time price tracker of different crypto coins.
-Link to visit site : https://cryptohub100.netlify.app/
+Link to visit site : https://crypto-hub-gauravgoyal467.vercel.app/
 
 # APIs used : coingecko APIs
 
